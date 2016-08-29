@@ -13,7 +13,7 @@ class setBomb {
         }
 
         //放炸彈
-        for ($set = 0; $set < 40; $set++) {
+        for ($set = 0; $set < 10; $set++) {
             while (true) {
                 $row = rand(0, 9);
                 $col = rand(0, 9);
@@ -71,6 +71,13 @@ class setBomb {
                         alert("die!");
                         location.href='bomb.php';
                     }
+                    if($(this).val() == "0"){
+                        function TestApply2() {
+                            alert();
+                        }
+
+                    }
+
               });
             });
         </script>
